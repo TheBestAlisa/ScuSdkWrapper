@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/TheBestAlisa/ScuSdkWrapper"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Alisa Martirosyan" => "alisammartirosyan@gmail.com" }
-  spec.ios.deployment_target = "11.0"
+  spec.ios.deployment_target = "13.0"
   spec.source_files = "ScuSdkWrapper/*"
   spec.source = { :git => "https://github.com/TheBestAlisa/ScuSdkWrapper.git", :tag => "0.0.2" }
   spec.vendored_frameworks = "ScuSdkWrapper/ScuSdk.framework"
