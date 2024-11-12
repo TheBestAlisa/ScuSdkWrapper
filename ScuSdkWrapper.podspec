@@ -12,7 +12,12 @@ Pod::Spec.new do |spec|
   spec.source = { :git => "https://github.com/TheBestAlisa/ScuSdkWrapper.git", :tag => "0.0.2" }
   spec.vendored_frameworks = "ScuSdkWrapper/ScuSdk.framework"
   spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64',
+    'EXCLUDED_ARCHS[sdk=iphoneos*]' => ''
+  }
+  spec.user_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64',
+    'EXCLUDED_ARCHS[sdk=iphoneos*]' => ''
   }
   spec.public_header_files = "ScuSdkWrapper/ScuSdkWrapper.h"
 
